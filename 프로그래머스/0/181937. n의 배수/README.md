@@ -69,5 +69,15 @@
 <li>32는 3의 배수가 아니므로 0을 return합니다.</li>
 </ul>
 
+-----
+
+### 다른 사람 풀이
+- 정말 획기적인 풀이가 있어서 가져왔다.
+  ```python
+  def solution(num, n):
+      return int(not(num % n))
+    ```
+- num이 n의 배수여서 num % n이 0인 경우, 0은 불리언 False로 간주되므로 not 연산자로 이를 뒤집어 True로 만들고, True는 1로 간주되니까 다시 정수화하여 최종적으로 1을 반환한다. 반대의 경우에는 그 반대로 한다.
+  
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
