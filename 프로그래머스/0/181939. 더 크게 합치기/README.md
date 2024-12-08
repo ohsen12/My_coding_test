@@ -77,5 +77,13 @@
 <li><code>a</code> ⊕ <code>b</code> = 898 이고, <code>b</code> ⊕ <code>a</code> = 889 입니다. 둘 중 더 큰 값은 898 이므로 898을 return 합니다.</li>
 </ul>
 
+---------
+### 다른 사람 풀이
+- 나는 엄청 길게 풀었는데 f-string 을 사용하여 다음과 같이 획기적으로도 풀 수 있다. max함수가 문자열에도 적용된다는 사실.
+  ```python
+  def solution(a, b):
+    return int(max(f"{a}{b}", f"{b}{a}"))
+  ```
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
