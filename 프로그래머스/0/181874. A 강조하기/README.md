@@ -72,5 +72,18 @@
 <li>따라서 "progrAmmers"를 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 나는 문자열의 요소가 대문자면 해당 요소를 일단 소문자로 다 바꿔준 다음에 마지막으로 a를 A로 바꿔주는 작업을 했다.
+- 하지만 그냥 처음에 문자열 자체를 소문자화한 다음에 a만 A로 바꿔주면 되는 거였고...
+  ```python
+  def solution(myString):
+      return myString.lower().replace('a', 'A')
+  ```
+  - **참고로 객체에 한번에 메서드 두 개 이상 써도 된다. 순서대로 적용된다.**
+ 
+---
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
