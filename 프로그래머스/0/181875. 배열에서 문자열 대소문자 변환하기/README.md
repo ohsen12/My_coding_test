@@ -74,5 +74,17 @@
 
 <p>※ 2023년 05월 15일 제한사항이 수정되었습니다.</p>
 
+---
+
+### 다른 사람 풀이
+- 리스트 컴프리헨션과 enumerate() 함수를 사용해 한방에 푸는 방법이 있다.
+   ```python
+   def solution(strArr):
+       return [s.lower() if i % 2 == 0 else s.upper() for i, s in enumerate(strArr)]
+   ```
+   - enumerate 함수는 리스트의 각 인덱스와 요소를 함께 가져온다.
+   - 리스트 컴프리헨션을 통해 인덱스가 짝수일 때는 해당 요소가 소문자로, 홀수일때는 대문자로 변환돼서 리스트 컴프리헨션이 반환하는 리스트에 저장되고 최종적으로 이를 반환한다.
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
