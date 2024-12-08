@@ -65,5 +65,22 @@
 <li>예제 2번의 <code>n</code>은 10으로 짝수입니다. 10 이하의 모든 양의 짝수는 2, 4, 6, 8, 10이고 이들의 제곱의 합인 2<sup>2</sup> + 4<sup>2</sup> + 6<sup>2</sup> + 8<sup>2</sup> + 10<sup>2</sup> = 4 + 16 + 36 + 64 + 100 = 220을 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 이거 말고도 리스트 컴프리헨션으로 한 줄로 쓴 코드들이 많았는데, 음.. 연산과정을 한 줄로 줄여벌이니 가독성이 떨어져서, 가독성 좋고 깔끔한 풀이를 가져왔다.
+  ```python
+  def solution(n):
+    answer = 0
+    if n%2:
+        for i in range(1,n+1,2):
+            answer += i
+    else:
+        for i in range(2,n+1,2):
+            answer += i**2
+    return answer
+  ```
+  - 나는 for문 안에서 숫자시퀀스 내에서 홀짝 구한다고 또 if문을 사용했는데 그냥 애초에 숫자시퀀스를 만들 때 시작점을 정하고, 간격을 2로 띄워주면 되는 것이었다!
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
