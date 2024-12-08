@@ -1,0 +1,5 @@
+# str.replace(old, new, count)
+
+def solution(rny_string):
+    answer = rny_string.replace('m','rn')
+    return answer
