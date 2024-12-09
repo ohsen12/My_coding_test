@@ -91,5 +91,22 @@
 <li>예제 3번에서 세 주사위 숫자가 모두 같으므로 (4 + 4 + 4) × (4<sup>2</sup> + 4<sup>2</sup> + 4<sup>2</sup> ) × (4<sup>3</sup> + 4<sup>3</sup> + 4<sup>3</sup> ) = 12 × 48 × 192 = 110,592점을 얻습니다. 따라서 110592를 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 똑똑한 풀이가 있어 가져왔다. set() 함수를 사용하여 중복 요소를 없앤 다음의 자료형의 길이를 파악하면 a,b,c 중 몇 개의 요소가 같은지 확인할 수 있다. 이를 통해 반환값을 조정한다.
+  ```python
+  def solution(a, b, c):
+    check = len(set([a, b, c]))
+    if check == 1:                # 모두 같은 값
+        return (a + b + c) * (a**2 + b**2 + c**2) * (a**3 + b**3 + c**3)
+    elif check == 2:              # 두 개가 같은 값
+        return (a + b + c) * (a**2 + b**2 + c**2)
+    else:                         # 셋 다 다름
+        return a + b + c
+  ```
+---
+
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
