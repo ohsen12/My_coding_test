@@ -73,5 +73,18 @@
 <li>따라서 -1을 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 나는 하나하나 조건을 추가하면서 획기적인 방법이 없을까 했는데 다음과 같이 딕셔너리를 활용하는 방법이 있다. n에다가 해당 키의 값을 그때 그때 더해주는 것이다.
+  ```python
+  def solution(n, control):
+    c = { 'w':1, 's':-1, 'd':10, 'a':-10}
+    for i in control:
+        n += c[i]
+    return n
+  ```
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
