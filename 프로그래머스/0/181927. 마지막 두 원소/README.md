@@ -66,5 +66,16 @@
 <li>마지막 원소인 5가 그전 원소인 7보다 크지 않기 때문에 5의 두 배인 10을 추가해 return합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 이렇게 한방에 할 수도 있구나..
+  ```python
+  def solution(l):
+    l.append(l[-1]-l[-2] if l[-1]>l[-2] else l[-1]*2)
+    return l
+  ```
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
