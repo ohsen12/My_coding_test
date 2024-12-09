@@ -93,4 +93,13 @@
 <div class="highlight"><pre class="codehilite"><code>따라서 4항만 true이므로 10을 return 합니다.
 </code></pre></div>
 
+---
+
+### 개념 설명
+- 등차수열이란 연속된 항들 간의 차이가 일정한 수열로 이 일정한 차이를 공차라고 한다.
+- 문제에는 첫 항이 a이고 공차가 b인 등차수열이 있을 때, 불리언값으로 이뤄진 배열 included에서, 만약 배열의 i 인덱스의 값이 True인 경우, 등차수열의 i번째 항의 값을 더하라는 말이다.
+- 등차수열의 i번째 항은 a+d*i 이다. (1번째 항일 경우 i가 0이 되어 공차가 사라져 첫 번째 항인 a 그 자체를 보여주게 된다.)
+
+---
+
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
