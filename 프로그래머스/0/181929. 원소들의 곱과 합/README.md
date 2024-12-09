@@ -66,5 +66,20 @@
 <li>모든 원소의 곱은 840, 합의 제곱은 529이므로 0을 return합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- for문 안에서 한방에 해결할 수 있는 방법이 있다.
+  ```python
+  def solution(num_list):
+    a=1
+    b=0
+    for x in num_list:
+        a*=x
+        b+=x
+    if a<b*b: return 1
+    return 0
+  ```
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
