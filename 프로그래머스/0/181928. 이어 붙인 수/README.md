@@ -67,5 +67,26 @@
 <li>홀수만 이어 붙인 수는 573이고 짝수만 이어 붙인 수는 8입니다. 두 수의 합은 581입니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 조금 더 깔끔한 방법이 있어 가져왔다.
+  ```python
+  def solution(num_list):
+    answer = 0
+    a = []
+    b = []
+    for i in num_list:
+        if i % 2 == 0:
+            a.append(f"{i}")
+        else:
+            b.append(f"{i}")
+    a = "".join(a)
+    b = "".join(b)
+    answer = int(a) + int(b)
+    return answer
+  ```
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
