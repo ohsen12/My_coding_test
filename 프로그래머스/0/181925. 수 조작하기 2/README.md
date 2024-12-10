@@ -87,12 +87,12 @@
   def solution(numLog):
     dict = {1:'w',-1:'s',10:'d',-10:'a'}
     list = []
-    for i in range(len(numLog)):
+    for i in range(len(numLog)):   # 조작된 값 계산. 최종결과값은 제외해주기
         if i == len(numLog) -1:  
             pass
         else:
             list.append(numLog[i+1]-numLog[i]) 
-    return ''.join(dict[i] for i in list)
+    return ''.join(dict[i] for i in list) # 조작된 값에 대응하는 문자 가져와서 합치기
   ``` 
 
 ---
