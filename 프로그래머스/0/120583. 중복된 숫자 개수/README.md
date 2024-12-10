@@ -70,5 +70,16 @@
 <li>[0, 2, 3, 4] 에는 1이 0개 있습니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- for문 돌렸는데 그냥 배열에서 count 메서드 사용하면 되는 거였고..
+- count 메서드는 문자열과 배열(리스트)에서 모두 사용할 수 있다. 문자열에서는 특정 문자가 나타나는 횟수를, 배열에서는 특정 요소가 나타나는 횟수를 세서 반환한다.
+  ```python
+  def solution(array, n):
+    return array.count(n)
+  ```
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
