@@ -78,5 +78,19 @@
 <li><code>dot</code>이 [-7, 9]로 x 좌표가 음수, y 좌표가 양수이므로 제 2 사분면에 속합니다. 따라서 2를 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 다른 창의적인 것도 많았는데 창의는 있는데 한눈에 파악하기는 어려워서 간단하지만 깔끔한 풀이를 가져왔다.
+  ```python
+  def solution(dot):
+      x,y = dot
+      if x*y>0:
+          return 1 if x>0 else 3
+      else:
+          return 4 if x>0 else 2
+  ```
+  - x와 y의 특성을 이용하라!
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
