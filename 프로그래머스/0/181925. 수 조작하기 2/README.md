@@ -1,4 +1,4 @@
-# [level 0] 수 조작하기 2 - 181925 
+# ⭐️[level 0] 수 조작하기 2 - 181925⭐️
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181925) 
 
@@ -79,5 +79,21 @@
 
 <p>입출력 예 #1은 "수 조작하기 1" 문제의 입출력 예 #1과 같은 예시이므로 참고하시기 바랍니다.</p>
 
+---
 
+### 내 풀이 다시 보기
+- 분명 또 숏코딩한 파이썬 신들이 있을 거라 생각했는데 이 문제는 없었다. 오히려 내 코드가 짧은 편이었음.
+  ```python
+  def solution(numLog):
+    dict = {1:'w',-1:'s',10:'d',-10:'a'}
+    list = []
+    for i in range(len(numLog)):
+        if i == len(numLog) -1:  
+            pass
+        else:
+            list.append(numLog[i+1]-numLog[i]) 
+    return ''.join(dict[i] for i in list)
+  ``` 
+
+---
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
