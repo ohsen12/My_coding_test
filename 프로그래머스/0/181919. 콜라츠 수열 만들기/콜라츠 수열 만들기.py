@@ -5,9 +5,8 @@ def solution(n):
             break
         elif n%2 == 0:
             n /= 2
-            list.append(n)
         else:
             n = 3*n +1
-            list.append(n)
+        list.append(n)
     return list
     
