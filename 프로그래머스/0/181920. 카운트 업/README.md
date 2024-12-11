@@ -57,5 +57,14 @@
 <li>3부터 10까지의 숫자들을 담은 리스트 [3, 4, 5, 6, 7, 8, 9, 10]를 return합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- range 가 반환하는 숫자시퀀스에 바로 리스트 씌워줘도 된다.
+  ```python
+  def solution(start, end):
+    return list(range(start, end + 1))
+  ```
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
