@@ -71,5 +71,17 @@
 <li>예제 2번의 <code>my_string</code>에서 인덱스 0, 1, 2, 3에 해당하는 글자는 각각 z, p, i, a이므로 <code>my_string</code>에서 <code>index_list</code>에 들어있는 원소에 해당하는 인덱스의 글자들은 각각 순서대로 p, i, z, z, a입니다. 따라서 "pizza"를 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 빈문자열에 다른 문자 +연산이 가능하다!
+  ```python
+  def solution(my_string, index_list):
+    answer = ""
+    for i in index_list:
+        answer += my_string[i]
+    return answer
+  ```
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
