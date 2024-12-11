@@ -118,5 +118,16 @@
       </table></li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 같은 의미로 이렇게도 가능하다.
+ ```python
+def solution(x1, x2, x3, x4):
+    return (x1 | x2) & (x3 | x4)
+```
+
+---
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
