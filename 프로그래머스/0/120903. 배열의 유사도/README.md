@@ -71,5 +71,23 @@
 <li>같은 원소가 없으므로 0을 return합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이⭐️
+- set을 사용한 방법이 많이 보인다.
+  ```python
+  def solution(s1, s2):
+    s1 = set(s1)
+    s2 = set(s2)
+    return len(s1.intersection(s2))
+  ```
+  - 교집합을 사용하기 위해 자료형을 셋으로 변경해준 후 **(셋 자료형은 집합연산을 지원한다.)** 교집합의 길이를 구한다.
+  ```python
+  def solution(s1, s2):
+    return len(set(s1)&set(s2))
+  ```
+  - 셋 자료형에서 교집합을 구할 때 s1.intersection(s2) 방법 대신 & 연산자를 사용할 수도 있다
+ 
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
