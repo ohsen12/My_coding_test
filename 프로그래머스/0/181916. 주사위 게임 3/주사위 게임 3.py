@@ -1,30 +1,36 @@
-# 중복 개념이 나오면 항상 set을 떠올리자.
 
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
 def solution(a, b, c, d):
-    dice = [a, b, c, d]
-    counts = {x: dice.count(x) for x in dice}
-    
-    # 모든 주사위 숫자가 같을 때
-    if len(counts) == 1:
-        return 1111 * a
-    
-    # 세 주사위가 같을 때
-    elif 3 in counts.values():
-        p = [k for k, v in counts.items() if v == 3][0]
-        q = [k for k, v in counts.items() if v == 1][0]
+    nums = [a, b, c, d]
+    counts = [nums.count(i) for i in nums]
+    if max(counts) == 4:
+        return a * 1111
+    elif max(counts) == 3:
+        p = nums[counts.index(3)]
+        q = nums[counts.index(1)]
         return (10 * p + q) ** 2
-    
-    # 두 쌍의 주사위 값이 같을 때
-    elif list(counts.values()).count(2) == 2:
-        p, q = sorted(counts.keys())
-        return (p + q) * abs(p - q)
-    
-    # 두 주사위가 같고 나머지 두 개의 값이 다를 때
-    elif 2 in counts.values():
-        p = [k for k, v in counts.items() if v == 2][0]
-        q, r = [k for k, v in counts.items() if v == 1]
-        return q * r
-    
-    # 모두 다른 숫자인 경우
+    elif max(counts) == 2:
+        if min(counts) == 2:
+            return (a + c) * abs(a - c) if a == b else (a + b) * abs(a - b)
+        else:
+            p = nums[counts.index(2)]
+            return (a * b * c * d) / p**2
     else:
-        return min(dice)
+        return min(nums)
