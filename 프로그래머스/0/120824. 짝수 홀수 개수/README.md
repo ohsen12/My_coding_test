@@ -66,5 +66,20 @@
 <li>[1, 3, 5, 7]에는 짝수가 없고 홀수가 네 개 있습니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 이런 획기적인 방법이..
+```python
+def solution(num_list):
+    answer = [0,0]
+    for n in num_list:
+        answer[n%2]+=1
+    return answer
+```
+- 짝수인 경우 n % 2는 0이 되고, answer[0]에 1을 더한다.
+- 홀수인 경우 n % 2는 1이 되고, answer[1]에 1을 더한다.
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
