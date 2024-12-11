@@ -1,0 +1,1 @@
+solution = lambda n,k : (12000*n + 2000*k)-(n//10)*2000 if n>= 10 else 12000*n + 2000*k
