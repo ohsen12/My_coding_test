@@ -1,4 +1,4 @@
-# [level 0] ⭐️주사위 게임 3 - 181916 
+# [level 0] ⭐️주사위 게임 3 - 181916⭐️  ❗️(나한텐)어려움❗️
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181916?language=python3) 
 
