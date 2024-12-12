@@ -73,5 +73,15 @@
 <li>예제 2번의 <code>my_string</code>에서 인덱스 4부터 인덱스 10까지를 뒤집으면 원래 문자열과 같은 "Stanley1yelnatS"이므로 "Stanley1yelnatS"를 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 문자열[a:b][::-1]에서 [::-1]은 슬라이싱된 문자열을 거꾸로 뒤집어서 반환해준다.
+  ```python
+  def solution(my_string, s, e):
+    return my_string[:s]+my_string[s:e+1][::-1]+my_string[e+1:]
+  ```
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
