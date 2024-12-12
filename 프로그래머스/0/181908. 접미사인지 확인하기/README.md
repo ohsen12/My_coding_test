@@ -93,5 +93,17 @@
 <li>예제 4번에서 <code>is_suffix</code>가 <code>my_string</code>의 접미사가 아니기 때문에 0을 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 똑똑하다.. 접미사는 뒤에서부터 몇 글자를 떼오는 것이고, 같은 길이의 접미사는 하나밖에 없는 점을 이용하여 작성한 코드이다.
+  ```python
+  def solution(my_string, str):
+    if my_string[-len(str):]==str: return 1
+    return 0
+  ```
+
+---
+
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
