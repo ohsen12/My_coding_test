@@ -71,5 +71,18 @@
 <li>580,000원에서 20%를 할인한 464,000원을 return 합니다.</li>
 </ul>
 
+---
+
+### 다른 사람 풀이
+- 이렇게 획기적인 방법이...
+  ```python
+  def solution(price):
+      discount_rates = {500000: 0.8, 300000: 0.9, 100000: 0.95, 0: 1}
+      for discount_price, discount_rate in discount_rates.items():
+          if price >= discount_price:
+              return int(price * discount_rate)
+  ```
+
+---
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
