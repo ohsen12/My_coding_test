@@ -1,3 +1,1 @@
-def solution(myString):
-    answer = myString.lower()
-    return answer
+solution = lambda myString: myString.lower()
