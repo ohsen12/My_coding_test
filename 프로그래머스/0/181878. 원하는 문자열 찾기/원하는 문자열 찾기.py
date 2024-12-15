@@ -1,4 +1,2 @@
-def solution(str, pat):
-    str = str.lower()
-    pat = pat.lower()
-    return 1 if pat in str else 0
+def solution(myString, pat):
+    return int(pat.lower() in myString.lower())
