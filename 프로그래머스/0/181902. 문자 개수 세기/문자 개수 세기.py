@@ -7,10 +7,6 @@ lower_str = string.ascii_lowercase
 upper_str = string.ascii_uppercase
 
 def solution(my_string):
-    upper_count = []
-    lower_count = []
-    for i in upper_str:
-        upper_count.append(my_string.count(i))
-    for i in lower_str:
-        lower_count.append(my_string.count(i))
+    upper_count = [my_string.count(i) for i in upper_str]
+    lower_count = [my_string.count(i) for i in lower_str]
     return upper_count + lower_count
