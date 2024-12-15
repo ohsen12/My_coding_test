@@ -1,9 +1,4 @@
-def solution(list):
-    l1 = []
-    l2 = []
-    for i in range(len(list)):
-        if i%2==0:
-            l1.append(list[i])
-        else:
-            l2.append(list[i])
-    return max(sum(l1),sum(l2))
+# 슬라이싱이란 건.. 참 유용한 듯
+
+def solution(num_list):
+    return max(sum(num_list[::2]), sum(num_list[1::2])) 
