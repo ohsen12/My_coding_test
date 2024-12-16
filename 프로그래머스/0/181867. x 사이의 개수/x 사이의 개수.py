@@ -1,3 +1,2 @@
 def solution(my):
-    l = my.split('x')
-    return [len(i) for i in l]
+    return [len(i) for i in my.split('x')]
