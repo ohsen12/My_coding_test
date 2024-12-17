@@ -1,7 +1,6 @@
 def solution(num_list):
-    l = []
+    count = 0
     for i in num_list:
-        count = 0
         while True:
             if i==1:
                 break
@@ -10,5 +9,4 @@ def solution(num_list):
             else:
                 i = i/2
             count += 1
-        l.append(count)
-    return sum(l)
+    return count
