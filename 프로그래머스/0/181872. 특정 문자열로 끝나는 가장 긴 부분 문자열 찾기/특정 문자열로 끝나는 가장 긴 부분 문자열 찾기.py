@@ -6,4 +6,11 @@ def solution(str, pat):
             else:
                 str = str[:i+len(pat)] #pat을 포함한 지점까지 슬라이싱 하기
     return str
-    
+
+'''
+# 다른 풀이 
+def solution(myString, pat):
+    return myString[:len(myString) - myString[::-1].index(pat[::-1])]
+
+# AAabc 와 ab의 경우, cbaAA에서 (전체 길이 5 - ba가 처음으로 나타나는 인덱스 1) = 4를 끝값으로 두고 자르면 pat이 끝나는 지점까지 자를 수 있다.
+'''

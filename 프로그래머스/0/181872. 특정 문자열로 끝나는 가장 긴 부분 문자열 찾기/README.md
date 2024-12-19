@@ -1,6 +1,6 @@
 # [level 0] 특정 문자열로 끝나는 가장 긴 부분 문자열 찾기 - 181872 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181872) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181872?language=python3) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 12월 19일 18:07:56
+2024년 12월 19일 18:19:21
 
 ### 문제 설명
 
